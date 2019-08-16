@@ -109,6 +109,11 @@ public class Main2Activity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
 
+        } else if (id == R.id.nav_view) {
+            Preferences.clearLoggedInUser(getBaseContext());
+            startActivity(new Intent(getBaseContext(),LoginActivity.class));
+            finish();
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
